@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Personal Library</title></head>
+    <body>
+        <h1><i>Personal Library</i></h1>
+        <label for="title">Title name:</label>
+        <input type="text" id="title" name="title"><br>
+       <br> <label for="author">Author name:</label>
+        <input type="text" id="author" name="author"><br>
+       <br> <label for="YearPublished">YearPublished:</label>
+        <input type="month" id="YearPublished" name="YearPublished"><br>
+        <br><label for="Status">Status:</label>
+        <input type="radio" name = "ans" value="yes"> Yes 
+        <input type="radio" name = "ans" value="no"> No </br>
+        <br><button id="add" class="add" onclick="add1()">Add+</button>
+        <p id="demo"></p>
+        <div class="java" id="java">
+
+        </div>
+    </body>
+    <script>
+        function add1(){
+        // let a = document.getElementById('title').innerHTML;
+        // document.getElementById("demo").innerHTML= a;
+        // }
+        const b=document.createElement("div");
+        b.classList.add("title");
+        b.innerHTML=`${title}`;
+        }
+    </script>
+</html>
